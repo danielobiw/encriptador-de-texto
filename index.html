@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+
+    <header>
+        <img class="alura" id="alura" src="images/alura.png" alt="alura">
+    </header>
+    
+    <main class="principal">
+        
+        <section class="panel_entrada">
+            <h1>Encriptador / Desencriptador de texto</h1>
+
+            <textarea class="panel_entrada_texto" id="entradaTexto" placeholder="Ingrese el texto aqui" rows="10" cols="30"></textarea>
+
+            <p class="panel_entrada_texto_advertencia"><i class="material-symbols-outlined">error</i>Ingrese solo letras minúsculas y sin acentos</p>
+            <div class="panel_entrada_botones">
+                <button onclick="encriptar();" class="botonEncriptar">Encriptar</button>
+                <button onclick="desencriptar();" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="panel_salida">
+            <div class="panel_salida_contenido">
+                <img class="panel_salida_muneco" id="muneco" src="images/muneco.png" alt="muneco">
+                <br>
+                <p class="mensage1" id="mensage1">Ningún mensaje fue encontrado</p>
+                <br>
+                <p class="mensage2" id="mensage2" >Ingrese el texto que desea encriptar o desencriptar</p>
+                <p class="texto_encriptado" id="texto_encriptado" hidden="true"></p><br>
+                <button onclick="copiar();" class="botonCopiar" id="botonCopiar" hidden="true">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Elaborado por:</p>
+        <p>Daniel Gaviria</p>
+        <p>2024</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
